@@ -21,8 +21,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AccessioningRepositoryApplication {
+public class AmpT2dAccessioningApplication {
     public static void main(String[] args) throws Exception {
-        SpringApplication.run(AccessioningRepositoryApplication.class, args);
+        SpringApplication.run(AmpT2dAccessioningApplication.class, args);
     }
 }
