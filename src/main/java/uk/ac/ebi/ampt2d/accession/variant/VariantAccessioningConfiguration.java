@@ -20,17 +20,25 @@ package uk.ac.ebi.ampt2d.accession.variant;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import uk.ac.ebi.ampt2d.accession.ApplicationConstants;
 import uk.ac.ebi.ampt2d.accession.variant.persistence.VariantAccessioningDatabaseService;
 import uk.ac.ebi.ampt2d.accession.variant.persistence.VariantAccessioningRepository;
+import uk.ac.ebi.ampt2d.accessioning.commons.autoconfigure.EnableSpringDataContiguousIdService;
 import uk.ac.ebi.ampt2d.accessioning.commons.generators.monotonic.MonotonicAccessionGenerator;
 import uk.ac.ebi.ampt2d.accessioning.commons.generators.monotonic.persistence.repositories.ContiguousIdBlockRepository;
 import uk.ac.ebi.ampt2d.accessioning.commons.generators.monotonic.persistence.service.ContiguousIdBlockService;
 
 @Configuration
 @ConditionalOnProperty(name = "services", havingValue = "variant-accession")
+@EnableSpringDataContiguousIdService
+@EntityScan({"uk.ac.ebi.ampt2d.accession.variant.persistence"})
+@EnableJpaRepositories(
+        basePackages = {"uk.ac.ebi.ampt2d.accession.variant.persistence"}
+)
 public class VariantAccessioningConfiguration {
 
     @Value("${" + ApplicationConstants.VARIANT_BLOCK_SIZE + "}")
