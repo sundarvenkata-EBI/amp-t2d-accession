@@ -30,7 +30,7 @@ import uk.ac.ebi.ampt2d.commons.rest.BasicRestController;
 public class StudyAccessioningRestController extends BasicRestController<StudyModel, StudyDTO, String> {
 
     public StudyAccessioningRestController(StudyAccessioningService studyAccessioningService) {
-        super(studyAccessioningService, new StudyModelToDTO());
+        super(studyAccessioningService, studyModel -> new StudyDTO(studyModel.getStudyProperties()));
     }
 }
 

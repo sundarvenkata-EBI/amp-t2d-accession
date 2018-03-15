@@ -30,7 +30,7 @@ import uk.ac.ebi.ampt2d.commons.rest.BasicRestController;
 public class SampleRestController extends BasicRestController<SampleModel, SampleDTO, String> {
 
     public SampleRestController(SampleAccessioningService sampleAccessioningService) {
-        super(sampleAccessioningService, new SampleModelToDTO());
+        super(sampleAccessioningService, sampleModel -> new SampleDTO(sampleModel.getSampleProperties()));
     }
 
 }
