@@ -30,7 +30,7 @@ import uk.ac.ebi.ampt2d.commons.rest.BasicRestController;
 public class FileRestController extends BasicRestController<FileModel, FileDTO, String> {
 
     public FileRestController(FileAccessioningService fileAccessioningService) {
-        super(fileAccessioningService, new FileModelToDTO());
+        super(fileAccessioningService, fileModel -> new FileDTO(fileModel.getHash()));
     }
 
 }
