@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import uk.ac.ebi.ampt2d.accession.sample.SampleAccessioningService;
 import uk.ac.ebi.ampt2d.accession.sample.SampleModel;
-import uk.ac.ebi.ampt2d.commons.rest.BasicRestController;
+import uk.ac.ebi.ampt2d.commons.accession.rest.BasicRestController;
 
 @RestController
 @RequestMapping(value = "/v1/sample")

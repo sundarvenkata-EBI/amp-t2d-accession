@@ -18,7 +18,7 @@
 
 package uk.ac.ebi.ampt2d.accession.file.persistence;
 
-import uk.ac.ebi.ampt2d.commons.generators.ModelHashAccession;
+import uk.ac.ebi.ampt2d.commons.accession.generators.ModelHashAccession;
 import uk.ac.ebi.ampt2d.accession.file.FileModel;
 
 import java.util.function.Function;

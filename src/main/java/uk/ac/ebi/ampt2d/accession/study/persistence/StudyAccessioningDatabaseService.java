@@ -18,8 +18,8 @@
 package uk.ac.ebi.ampt2d.accession.study.persistence;
 
 import uk.ac.ebi.ampt2d.accession.study.StudyModel;
-import uk.ac.ebi.ampt2d.commons.core.AccessioningRepository;
-import uk.ac.ebi.ampt2d.commons.persistence.BasicSpringDataRepositoryDatabaseService;
+import uk.ac.ebi.ampt2d.commons.accession.core.AccessioningRepository;
+import uk.ac.ebi.ampt2d.commons.accession.persistence.BasicSpringDataRepositoryDatabaseService;
 
 public class StudyAccessioningDatabaseService extends BasicSpringDataRepositoryDatabaseService<StudyModel, StudyEntity, String, String> {
 

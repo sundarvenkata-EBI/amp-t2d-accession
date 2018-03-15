@@ -23,7 +23,7 @@ import uk.ac.ebi.ampt2d.accession.sample.rest.SampleDTO;
 import uk.ac.ebi.ampt2d.accession.study.StudyModel;
 import uk.ac.ebi.ampt2d.accession.study.persistence.StudyEntity;
 import uk.ac.ebi.ampt2d.accession.study.rest.StudyDTO;
-import uk.ac.ebi.ampt2d.commons.generators.ModelHashAccession;
+import uk.ac.ebi.ampt2d.commons.accession.generators.ModelHashAccession;
 
 import java.util.Arrays;
 import java.util.HashMap;

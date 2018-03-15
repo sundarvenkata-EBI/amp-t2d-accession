@@ -18,10 +18,10 @@
 
 package uk.ac.ebi.ampt2d.accession.sample;
 
-import uk.ac.ebi.ampt2d.commons.core.BasicAccessioningService;
-import uk.ac.ebi.ampt2d.commons.generators.SingleAccessionGenerator;
-import uk.ac.ebi.ampt2d.commons.hashing.SHA1HashingFunction;
-import uk.ac.ebi.ampt2d.commons.persistence.DatabaseService;
+import uk.ac.ebi.ampt2d.commons.accession.core.BasicAccessioningService;
+import uk.ac.ebi.ampt2d.commons.accession.generators.SingleAccessionGenerator;
+import uk.ac.ebi.ampt2d.commons.accession.hashing.SHA1HashingFunction;
+import uk.ac.ebi.ampt2d.commons.accession.persistence.DatabaseService;
 
 public class SampleAccessioningService extends BasicAccessioningService<SampleModel, String, String> {
 
