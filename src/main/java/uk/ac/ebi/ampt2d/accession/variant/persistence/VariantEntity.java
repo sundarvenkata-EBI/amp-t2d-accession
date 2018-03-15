@@ -23,7 +23,6 @@ import uk.ac.ebi.ampt2d.accession.variant.VariantType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.validation.constraints.Size;
 
 @Entity
 public class VariantEntity implements VariantModel {

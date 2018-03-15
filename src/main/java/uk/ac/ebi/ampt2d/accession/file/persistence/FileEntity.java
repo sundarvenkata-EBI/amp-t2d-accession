@@ -31,8 +31,8 @@ public class FileEntity implements FileModel {
     private String hashedMessage;
 
     @Id
-    @Column(nullable = false, unique = true, length = 230)
-    @Size(max = 230, min = 0)
+    @Column(nullable = false, unique = true, length = 190)
+    @Size(max = 190, min = 0)
     private String accession;
 
     FileEntity() {

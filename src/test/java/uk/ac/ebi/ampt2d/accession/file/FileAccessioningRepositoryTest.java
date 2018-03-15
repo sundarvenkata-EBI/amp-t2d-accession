@@ -26,7 +26,7 @@ import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.context.transaction.TestTransaction;
 import uk.ac.ebi.ampt2d.accession.file.persistence.FileEntity;
-import uk.ac.ebi.ampt2d.accessioning.commons.accessioning.AccessioningRepository;
+import uk.ac.ebi.ampt2d.commons.core.AccessioningRepository;
 
 import java.util.Collection;
 import java.util.HashSet;

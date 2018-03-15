@@ -18,8 +18,8 @@
 package uk.ac.ebi.ampt2d.accession.file.persistence;
 
 import uk.ac.ebi.ampt2d.accession.file.FileModel;
-import uk.ac.ebi.ampt2d.accessioning.commons.accessioning.AccessioningRepository;
-import uk.ac.ebi.ampt2d.accessioning.commons.persistence.BasicSpringDataRepositoryDatabaseService;
+import uk.ac.ebi.ampt2d.commons.core.AccessioningRepository;
+import uk.ac.ebi.ampt2d.commons.persistence.BasicSpringDataRepositoryDatabaseService;
 
 public class FileAccessioningDatabaseService extends BasicSpringDataRepositoryDatabaseService<FileModel, FileEntity, String, String> {
 

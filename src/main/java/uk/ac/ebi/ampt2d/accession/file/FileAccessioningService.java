@@ -19,9 +19,9 @@
 package uk.ac.ebi.ampt2d.accession.file;
 
 
-import uk.ac.ebi.ampt2d.accessioning.commons.accessioning.BasicAccessioningService;
-import uk.ac.ebi.ampt2d.accessioning.commons.generators.SingleAccessionGenerator;
-import uk.ac.ebi.ampt2d.accessioning.commons.persistence.DatabaseService;
+import uk.ac.ebi.ampt2d.commons.core.BasicAccessioningService;
+import uk.ac.ebi.ampt2d.commons.generators.SingleAccessionGenerator;
+import uk.ac.ebi.ampt2d.commons.persistence.DatabaseService;
 
 public class FileAccessioningService extends BasicAccessioningService<FileModel, String, String> {
 

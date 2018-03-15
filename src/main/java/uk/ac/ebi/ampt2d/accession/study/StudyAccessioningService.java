@@ -18,10 +18,10 @@
 
 package uk.ac.ebi.ampt2d.accession.study;
 
-import uk.ac.ebi.ampt2d.accessioning.commons.accessioning.BasicAccessioningService;
-import uk.ac.ebi.ampt2d.accessioning.commons.generators.SingleAccessionGenerator;
-import uk.ac.ebi.ampt2d.accessioning.commons.hashing.SHA1HashingFunction;
-import uk.ac.ebi.ampt2d.accessioning.commons.persistence.DatabaseService;
+import uk.ac.ebi.ampt2d.commons.core.BasicAccessioningService;
+import uk.ac.ebi.ampt2d.commons.generators.SingleAccessionGenerator;
+import uk.ac.ebi.ampt2d.commons.hashing.SHA1HashingFunction;
+import uk.ac.ebi.ampt2d.commons.persistence.DatabaseService;
 
 public class StudyAccessioningService extends BasicAccessioningService<StudyModel, String, String> {
 

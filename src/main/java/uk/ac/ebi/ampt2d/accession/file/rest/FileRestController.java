@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import uk.ac.ebi.ampt2d.accession.file.FileAccessioningService;
 import uk.ac.ebi.ampt2d.accession.file.FileModel;
-import uk.ac.ebi.ampt2d.accessioning.commons.rest.BasicRestController;
+import uk.ac.ebi.ampt2d.commons.rest.BasicRestController;
 
 @RestController
 @RequestMapping(value = "/v1/file")

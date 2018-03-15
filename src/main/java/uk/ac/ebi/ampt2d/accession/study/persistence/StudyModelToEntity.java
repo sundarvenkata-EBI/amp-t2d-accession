@@ -19,7 +19,7 @@
 package uk.ac.ebi.ampt2d.accession.study.persistence;
 
 import uk.ac.ebi.ampt2d.accession.study.StudyModel;
-import uk.ac.ebi.ampt2d.accessioning.commons.generators.ModelHashAccession;
+import uk.ac.ebi.ampt2d.commons.generators.ModelHashAccession;
 
 import java.util.function.Function;
 

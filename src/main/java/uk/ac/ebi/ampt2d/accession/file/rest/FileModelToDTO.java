@@ -19,7 +19,6 @@
 package uk.ac.ebi.ampt2d.accession.file.rest;
 
 import uk.ac.ebi.ampt2d.accession.file.FileModel;
-import uk.ac.ebi.ampt2d.accession.file.rest.FileDTO;
 
 import java.util.function.Function;
 
