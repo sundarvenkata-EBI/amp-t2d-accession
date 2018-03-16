@@ -26,7 +26,9 @@ public class SampleAccessioningDatabaseService extends BasicSpringDataRepository
 
 
     public SampleAccessioningDatabaseService(AccessioningRepository<SampleEntity, String, String> repository) {
-        super(repository, new SampleModelToEntityFunction(), sampleEntity -> sampleEntity.getAccession(),
+        super(repository,
+                mha -> new SampleEntity(mha.model().getSampleProperties(), mha.accession(), mha.hash()),
+                sampleEntity -> sampleEntity.getAccession(),
                 sampleEntity -> sampleEntity.getHashedMessage());
     }
 }

@@ -24,8 +24,10 @@ import uk.ac.ebi.ampt2d.commons.accession.persistence.BasicSpringDataRepositoryD
 public class StudyAccessioningDatabaseService extends BasicSpringDataRepositoryDatabaseService<StudyModel, StudyEntity, String, String> {
 
     public StudyAccessioningDatabaseService(AccessioningRepository<StudyEntity, String, String> repository) {
-        super(repository, new StudyModelToEntity(), studyEntity -> studyEntity.getAccession(), studyEntity ->
-                studyEntity.getHashedMessage());
+        super(repository,
+                mha -> new StudyEntity(mha.model().getStudyProperties(), mha.accession(), mha.hash()),
+                studyEntity -> studyEntity.getAccession(),
+                studyEntity -> studyEntity.getHashedMessage());
     }
 
 }

@@ -67,6 +67,7 @@ public class FileBasicAccessioningServiceTest {
                 new FileDTO("checksumB"), new FileDTO("checksumC"));
         Map<String, FileModel> accessions = accessioningService.getOrCreateAccessions(newObjects);
 
+        assertEquals(3, accessions.size());
         assertFalse(accessions.containsKey(null));
     }
 

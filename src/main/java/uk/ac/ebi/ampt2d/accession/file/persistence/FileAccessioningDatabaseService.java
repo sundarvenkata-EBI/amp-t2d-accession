@@ -24,7 +24,8 @@ import uk.ac.ebi.ampt2d.commons.accession.persistence.BasicSpringDataRepositoryD
 public class FileAccessioningDatabaseService extends BasicSpringDataRepositoryDatabaseService<FileModel, FileEntity, String, String> {
 
     public FileAccessioningDatabaseService(AccessioningRepository<FileEntity, String, String> repository) {
-        super(repository, new FileModelToEntity(),
+        super(repository,
+                mha -> new FileEntity(mha.hash(), mha.accession()),
                 FileEntity::getAccession,
                 FileEntity::getHashedMessage);
     }
