@@ -27,7 +27,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import uk.ac.ebi.ampt2d.accession.study.persistence.StudyAccessioningDatabaseService;
 import uk.ac.ebi.ampt2d.accession.study.rest.StudyDTO;
 import uk.ac.ebi.ampt2d.commons.accession.generators.ModelHashAccession;
-import uk.ac.ebi.ampt2d.test.configurationaccession.StudyAccessioningDatabaseServiceTestConfiguration;
+import uk.ac.ebi.ampt2d.test.configuration.StudyAccessioningDatabaseServiceTestConfiguration;
 
 import java.util.Arrays;
 import java.util.Collection;

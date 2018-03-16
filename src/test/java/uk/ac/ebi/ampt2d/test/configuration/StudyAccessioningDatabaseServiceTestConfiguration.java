@@ -15,32 +15,32 @@
  * limitations under the License.
  *
  */
-package uk.ac.ebi.ampt2d.test.configurationaccession;
+package uk.ac.ebi.ampt2d.test.configuration;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.context.annotation.Bean;
-import uk.ac.ebi.ampt2d.accession.file.FileAccessioningService;
-import uk.ac.ebi.ampt2d.accession.file.persistence.FileAccessioningDatabaseService;
-import uk.ac.ebi.ampt2d.accession.file.persistence.FileAccessioningRepository;
+import uk.ac.ebi.ampt2d.accession.study.StudyAccessioningService;
+import uk.ac.ebi.ampt2d.accession.study.persistence.StudyAccessioningDatabaseService;
+import uk.ac.ebi.ampt2d.accession.study.persistence.StudyAccessioningRepository;
 
 @TestConfiguration
-public class FileAccessioningServiceTestConfiguration {
+public class StudyAccessioningDatabaseServiceTestConfiguration {
 
     @Autowired
-    private FileAccessioningRepository repository;
+    private StudyAccessioningRepository repository;
 
     @Bean
-    @ConditionalOnProperty(name = "services", havingValue = "file-accession")
-    public FileAccessioningService fileAccessionService() {
-        return new FileAccessioningService(fileAccessioningDatabaseService());
+    @ConditionalOnProperty(name = "services", havingValue = "study-accession")
+    public StudyAccessioningService studyAccessionService() {
+        return new StudyAccessioningService(studyAccessioningDatabaseService());
     }
 
     @Bean
-    @ConditionalOnProperty(name = "services", havingValue = "file-accession")
-    public FileAccessioningDatabaseService fileAccessioningDatabaseService() {
-        return new FileAccessioningDatabaseService(repository);
+    @ConditionalOnProperty(name = "services", havingValue = "study-accession")
+    public StudyAccessioningDatabaseService studyAccessioningDatabaseService() {
+        return new StudyAccessioningDatabaseService(repository);
     }
 
 }

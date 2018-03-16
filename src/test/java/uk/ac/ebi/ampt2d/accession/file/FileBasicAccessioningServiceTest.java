@@ -25,7 +25,7 @@ import org.springframework.context.annotation.Import;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 import uk.ac.ebi.ampt2d.accession.file.rest.FileDTO;
-import uk.ac.ebi.ampt2d.test.configurationaccession.FileAccessioningServiceTestConfiguration;
+import uk.ac.ebi.ampt2d.test.configuration.FileAccessioningServiceTestConfiguration;
 
 import java.util.Arrays;
 import java.util.List;
