@@ -21,7 +21,13 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AmpT2dAccessioningApplication {
+public class AmpT2dAccessioningApplication extends SpringBootServletInitializer {
+
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(AmpT2dAccessioningApplication.class);
+    }
+
     public static void main(String[] args) throws Exception {
         SpringApplication.run(AmpT2dAccessioningApplication.class, args);
     }
