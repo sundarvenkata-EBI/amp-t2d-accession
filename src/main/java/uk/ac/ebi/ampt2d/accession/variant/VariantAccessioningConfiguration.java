@@ -29,7 +29,7 @@ import uk.ac.ebi.ampt2d.accession.variant.persistence.VariantAccessioningDatabas
 import uk.ac.ebi.ampt2d.accession.variant.persistence.VariantAccessioningRepository;
 import uk.ac.ebi.ampt2d.commons.accession.autoconfigure.EnableSpringDataContiguousIdService;
 import uk.ac.ebi.ampt2d.commons.accession.generators.monotonic.MonotonicAccessionGenerator;
-import uk.ac.ebi.ampt2d.commons.accession.generators.monotonic.persistence.service.ContiguousIdBlockService;
+import uk.ac.ebi.ampt2d.commons.accession.persistence.monotonic.service.ContiguousIdBlockService;
 
 @Configuration
 @ConditionalOnProperty(name = "services", havingValue = "variant-accession")
