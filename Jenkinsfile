@@ -11,12 +11,12 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'mvn clean -Daccession.service=file-accession install -DskipTests'
+        sh 'mvn clean -Daccession.service=variant-accession install -DskipTests'
       }
     }
     stage('Deploy') {
      steps {
-        sh "curl --upload-file target/*.war 'http://'${tomcatCredentials}'@'${developmentHost}':8080/manager/text/deploy?path=/t2d&update=true' | grep 'OK - Deployed application at context path [/t2d]'"
+        sh "curl --upload-file target/*.war 'http://'${tomcatCredentials}'@'${developmentHost}':8080/manager/text/deploy?path=/t2d&update=true' | grep 'OK - Deployed application at context path'"
      }
   }
 }
