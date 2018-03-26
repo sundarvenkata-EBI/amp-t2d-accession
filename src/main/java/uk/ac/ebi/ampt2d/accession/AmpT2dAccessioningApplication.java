@@ -19,6 +19,8 @@ package uk.ac.ebi.ampt2d.accession;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.support.SpringBootServletInitializer;
 
 @SpringBootApplication
 public class AmpT2dAccessioningApplication extends SpringBootServletInitializer {
