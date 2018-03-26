@@ -16,7 +16,7 @@ pipeline {
     }
     stage('Deploy') {
      steps {
-        sh "curl --upload-file target/*.war 'http://'${tomcatCredentials}'@'${developmentHost}':8080/manager/text/deploy?path=/t2d&update=true' | grep 'OK - Deployed application at context path /t2d'"
+        sh "curl --upload-file target/*.war 'http://'${tomcatCredentials}'@'${developmentHost}':8080/manager/text/deploy?path=/t2d&update=true'"
      }
   }
 }
