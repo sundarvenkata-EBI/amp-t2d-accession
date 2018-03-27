@@ -24,4 +24,6 @@ public class ApplicationConstants {
     public static final String VARIANT_BLOCK_SIZE = "accessioning.variant.block.size";
     public static final String VARIANT_ID = "accessioning.variant.id";
 
+    public static final String STUDY_BLOCK_SIZE = "accessioning.study.block.size";
+    public static final String STUDY_ID = "accessioning.study.id";
 }

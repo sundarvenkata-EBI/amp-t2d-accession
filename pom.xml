@@ -12,6 +12,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <buildDirectory>${project.basedir}/target</buildDirectory>
     </properties>
 
     <parent>
@@ -35,7 +36,7 @@
 	    <groupId>org.springframework.boot</groupId>
 	    <artifactId>spring-boot-starter-tomcat</artifactId>
 	    <scope>provided</scope>
-	</dependency>
+	    </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -77,6 +78,7 @@
     </repositories>
 
     <build>
+        <directory>${buildDirectory}</directory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

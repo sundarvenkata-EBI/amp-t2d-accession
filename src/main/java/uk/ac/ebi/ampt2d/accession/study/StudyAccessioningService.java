@@ -19,19 +19,19 @@
 package uk.ac.ebi.ampt2d.accession.study;
 
 import uk.ac.ebi.ampt2d.commons.accession.core.BasicAccessioningService;
-import uk.ac.ebi.ampt2d.commons.accession.generators.SingleAccessionGenerator;
+import uk.ac.ebi.ampt2d.commons.accession.generators.DecoratedAccessionGenerator;
 import uk.ac.ebi.ampt2d.commons.accession.hashing.SHA1HashingFunction;
 import uk.ac.ebi.ampt2d.commons.accession.persistence.DatabaseService;
 
 public class StudyAccessioningService extends BasicAccessioningService<StudyModel, String, String> {
 
-    public StudyAccessioningService(DatabaseService<StudyModel, String, String> dbService) {
+    public StudyAccessioningService(DecoratedAccessionGenerator decoratedAccessionGenerator, DatabaseService<StudyModel, String, String>
+            dbService) {
         super(
-                SingleAccessionGenerator.ofSHA1AccessionGenerator(new StudyModelSummaryFunction()),
+                decoratedAccessionGenerator,
                 dbService,
                 new StudyModelSummaryFunction(),
                 new SHA1HashingFunction()
         );
-
     }
 }
