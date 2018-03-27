@@ -17,10 +17,8 @@ pipeline {
     }
     stage('Deploy') {
      steps {
-        sh "curl --upload-file file/target/*.war 'http://'${tomcatCredentials}'@'${developmentHost}':8080/manager/text
-        /deploy?path=/hash&update=true' | grep 'OK - Deployed application at context path'"
-         sh "curl --upload-file study/target/*.war 'http://'${tomcatCredentials}'@'${developmentHost}':8080/manager/text
-                /deploy?path=/monotonic&update=true' | grep 'OK - Deployed application at context path'"
+        sh "curl --upload-file file/target/*.war 'http://'${tomcatCredentials}'@'${developmentHost}':8080/manager/text/deploy?path=/hash&update=true' | grep 'OK - Deployed application at context path'"
+        sh "curl --upload-file study/target/*.war 'http://'${tomcatCredentials}'@'${developmentHost}':8080/manager/text/deploy?path=/monotonic&update=true' | grep 'OK - Deployed application at context path'"
      }
   }
 }
