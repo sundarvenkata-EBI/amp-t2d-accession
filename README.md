@@ -1,2 +1,2 @@
 # amp-t2d-accession
-AMP T2D accessioning service
+AMP-T2D accessioning service
